@@ -4,14 +4,41 @@ const validateBinary = (binary) => BINARY_REGEX.test(binary);
 const binaryToDecimal = (binary) => parseInt(binary, 2);
 
 const binaryInput = document.getElementById('binary-input');
-const decimalResult = document.getElementById('decimal-result');
+const resultContainer = document.getElementById('result-container');
+const decimalResult = document.getElementById('result-value');
+const errorContainer = document.getElementById('error-container');
+
 
 
 binaryInput.addEventListener('input', (event) => {
   const binary = binaryInput.value;
   if (!validateBinary(binary)) {
-    console.log("not valid");
-    decimalResult.innerText = null;
+    clearResult();
+    showError();
+    return;
   }
-  decimalResult.innerText = binaryToDecimal(binaryInput.value);
+  hideError();
+  showResult(binaryToDecimal(binaryInput.value));
 })
+
+function showResult(value) {
+  decimalResult.innerText = value;
+  resultContainer.classList.add('show');
+}
+
+function clearResult() {
+  decimalResult.innerText = null;
+  hideResult();
+}
+
+function hideResult() {
+  resultContainer.classList.remove('show');
+}
+
+function showError() {
+  errorContainer.classList.add('show');
+}
+
+function hideError() {
+  errorContainer.classList.remove('show');
+}

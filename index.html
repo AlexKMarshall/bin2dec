@@ -4,15 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bin2Dec</title>
+  <link rel="stylesheet" href="style.css">
   <script defer src="index.js"></script>
 </head>
 <body>
-  <div id="container">
+  <main id="container">
     <h1>Binary 2 Decimal</h1>
     <label for="binary">Binary</label>
     <input type="text" name="binary" id="binary-input">
-    <h2>Decimal Result</h2>
-    <p id="decimal-result"></p>
-  </div>
+    <div id="error-container">
+      <h2>Error</h2>
+      <p>Please enter a valid binary number</p>
+    </div>
+    <div id="result-container">
+      <h2>Decimal Result</h2>
+      <p id="result-value"></p>
+    </div>
+  </main>
 </body>
 </html>
