@@ -12,6 +12,11 @@ const errorContainer = document.getElementById('error-container');
 
 binaryInput.addEventListener('input', (event) => {
   const binary = binaryInput.value;
+  if(!binary) {
+    clearResult();
+    hideError();
+    return;
+  }
   if (!validateBinary(binary)) {
     clearResult();
     showError();
