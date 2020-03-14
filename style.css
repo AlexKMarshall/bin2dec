@@ -22,14 +22,13 @@ main {
   background-color: #333333;
   width: 80%;
   height: 80%;
-  min-width: 500px;
   max-width: 1000px;
 }
 
 h1 {
   font-family: Exo, sans-serif;
   font-weight: normal;
-  font-size: 6em;
+  font-size: 8vw;
   color: white;
   margin-top: 0.5em;
 }
@@ -38,7 +37,7 @@ input {
   width: 100%;
   font-family: Assistant, sans-serif;
   font-weight: normal;
-  font-size: 5em;
+  font-size: 7vw;
   letter-spacing: 0.2em;
   color: white;
   padding-bottom: 10px;
@@ -59,13 +58,13 @@ input:focus {
   display: none;
   font-family: Exo, sans-serif;
   font-weight: normal;
-  font-size: 6em;
+  font-size: 8vw;
   color: white;
   margin-top: 1em;
 }
 
 #error-container {
-  font-size: 2em;
+  font-size: 5vw;
   color: red;
   margin-top: 1em;
 }
