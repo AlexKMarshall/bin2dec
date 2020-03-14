@@ -10,60 +10,36 @@ html, body {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #454545;
+  background-color: #333333;
   display: flex;
   justify-content: center;
-  align-items: center;
+
 }
 
 main {
   background-color: #333333;
-  width: 50%;
-  height: 50%;
-  border-radius: 5px;
-  overflow: hidden;
-}
- 
-#input-container {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
+  width: 80%;
+  height: 80%;
+  min-width: 500px;
+  max-width: 1000px;
+
 }
 
-#input-container label {
-  padding: 1em;
+h1 {
+  font-family: Exo, sans-serif;
+  font-weight: normal;
+  font-size: 96px;
   color: white;
-  border-top: 5px solid #c90057;
+  margin-top: 0.5em;
 }
 
-#input-container input {
-  margin: 0 1em 2em 1em;
-}
-
-#error-container {
-  display: none;
-}
-
-#result-value {
-  background-color: #690069;
-  padding: 0.2em;
-  font-size: 5em;
-  border-radius: 50%;
-}
-
-#result-container {
-  /* height: 100%; */
+input {
   width: 100%;
-  background-color: blue;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-#error-container.show {
-  display: block;
-}
-
-#result-container.show {
-  display: flex;
+  font-family: Assistant, sans-serif;
+  font-weight: normal;
+  font-size: 72px;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
 }
