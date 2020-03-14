@@ -8,8 +8,6 @@ const resultContainer = document.getElementById('result-container');
 const decimalResult = document.getElementById('result-value');
 const errorContainer = document.getElementById('error-container');
 
-
-
 binaryInput.addEventListener('input', (event) => {
   const binary = binaryInput.value;
   if(!binary) {
